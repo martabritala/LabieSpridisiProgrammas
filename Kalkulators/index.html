@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="noformejums.css">
+    <title>Kalkulators</title>
+    <script  src="darbs.js"></script> 
+</head>
+<body>
+<h1>Vienkāršs kalkulators</h1>
+<div id="container">
+<div id="calculator">
+    <!--tur kur raksta un rēķina vieta-->
+<div>
+    <input type="text" id="input" placeholder="0" readonly="readonly">
+    <div>
+    <input type="text" id="atbilde" readonly="readonly">
+</div>    
+</div> 
+<!-- pārējas pogas kalkulatoram backspaces kods ---&#x2190-->
+<div id="keyboard">
+    <tr>
+        <td>
+        <input type="button" class="btn btn-info" value="CE" onclick="clearScreen()">
+        <input type="button" class="btn btn-info" value="&#x2190" onclick="dzest()">
+        <input type="button" class="btn btn-info" value="=" onclick="rekini()">
+
+        
+        <br>
+        <input type="button" value="+" class="operator" class="btn btn-info" onclick="getZime('+')">
+        <input type="button" value="&#xf7" class="operator" class="btn btn-info" onclick="getZime('/')">
+        <input type="button" value="-" class="operator" class="btn btn-info" onclick="getZime('-')"> 
+        <input type="button" value="*" class="operator" class="btn btn-info" onclick="getZime('*')">
+        <br>
+        <input type="button" value="1" class="number" class="btn btn-info" onclick="getNumber(1)">
+        <input type="button" value="2" class="number" class="btn btn-info" onclick="getNumber(2)">
+        <input type="button" value="3" class="number" class="btn btn-info" onclick="getNumber(3)">
+        <br>
+
+        <input type="button" value="4" class="number" class="btn btn-info" onclick="getNumber(4)">
+        <input type="button" value="5" class="number" class="btn btn-info" onclick="getNumber(5)">
+        <input type="button" value="6" class="number" class="btn btn-info" onclick="getNumber(6)">
+        <br>
+        <input type="button" value="7" class="number" class="btn btn-info" onclick="getNumber(7)">
+        <input type="button" value="8" class="number" class="btn btn-info" onclick="getNumber(8)">
+        <input type="button" value="9" class="number" class="btn btn-info" onclick="getNumber(9)">
+        <br>
+        <input type="button" value="0" class="number" class="btn btn-info" onclick="getNumber(0)">
+       </td>
+    </tr>
+    </div>
+ </div> 
+</div>
+</body>
+</html>
